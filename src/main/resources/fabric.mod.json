@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "darktech",
+  "version": "${version}",
+
+  "name": "Dark Tech",
+  "description": "Explore the dark side of Minecraft and exploit the power of DARK",
+  "authors": [
+    "Lightiichen"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.lightiichen.darktech.DarkTech"
+    ],
+    "client": [
+      "net.lightiichen.darktech.DarkTechClient"
+    ]
+  },
+  "mixins": [
+    "darktech.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
